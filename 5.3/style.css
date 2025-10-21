@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.boxtep{
+    border-style: hidden;
+    display:inline-block;
+    padding:10px;
+}
+a{
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    background-color: #FFDF96; 
+    padding:10px 0
+}
+a:link{
+    color:black;
+}
+.hh-header{
+    position: relative;
+    height: 170px;
+}
+.hh-logo{
+    position:absolute;
+    right: 0px;
+    width: 400px;
+}
+.hh-company{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    text-shadow: 0 0 2px black;
+    position: absolute;
+    top: 45px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted gray;
+}
+.hh-slogan{
+    position: absolute;
+    top: 100px;
+}
+.hh-sheet{
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    top: -10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.hh-body{
+    padding: 5px;
+}
+.hh-cart ul{
+    list-style: none;
+    font-size: smaller;
+}
+.hh-cart img{
+    height: 30%;
+    width: 30%;
+}
+.hh-card{
+    margin: 7px 0;
+}
+.hh-product{
+    text-align: center;
+    padding: 5px 2px;
+    display: inline-block;
+}
+.hh-product .card-body img{
+    height: 150px;
+    max-width: 95%;
+}
+header img{
+    width: 300px;
+    float: right;
+}
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #FFDF96;
+}
+header .left{
+    margin-left: 30px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    box-shadow: 0 0 5px lightgray;
+}
+body{
+    margin: 40px 100px;
+    color: #222;
+    background-image: url(img/bg.png);
+}
+.main .right{
+    margin-top: 50px;
+}
+a:visited,
+a:active,
+a:focus {
+    color: #333;
+}
+.container, .main{
+    background-color: #fff;
+    border-radius: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Mời Halloween</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎃 Thiệp Mời Halloween 🎃</h1>
+        <nav>
+            <a href="#lichsu">Lịch sử</a>
+            <a href="#gianhang">Gian hàng</a>
+            <a href="#bosuutap">Bộ sưu tập</a>
+            <a href="#dangky">Đăng ký</a>
+        </nav>
+    </header>
+    <section id="lichsu">
+        <h2>Lịch sử Halloween</h2>
+        <p>Halloween bắt nguồn từ lễ Samhain của người Celt cổ, kỷ niệm sự kết thúc mùa gặt và khởi đầu mùa đông. Qua thời gian, nó trở thành dịp hóa trang, đốt nến trong bí ngô và vui chơi cùng bạn bè.</p>
+    </section>
+    <section id="gianhang">
+        <h2>Gian hàng Halloween</h2>
+        <ul class="vendors">
+            <li data-detail="Gian hàng Quý Ma: Mặt nạ, nến ma thuật, vòng cổ bí ẩn.">Gian hàng Quý Ma</li>
+            <li data-detail="Bếp Đêm Đen: Bánh bí ngô, kẹo ma quái, nước khói.">Bếp Đêm Đen</li>
+            <li data-detail="Xưởng Hóa Trang: Trang điểm, thuê đồ hóa trang.">Xưởng Hóa Trang</li>
+        </ul>
+        <div id="vendor-detail">Chọn gian hàng để xem chi tiết...</div>
+    </section>
+    <section id="bosuutap">
+        <h2>Bộ sưu tập Halloween</h2>
+        <div class="gallery">
+            <img src="img/1.jpg" alt="1">
+            <img src="img/2.jpg" alt="2">
+            <img src="img/3.jpg" alt="3">
+            <img src="img/4.webp" alt="4">
+            <img src="img/5.jpg" alt="5">
+        </div>
+    </section>
+    <section id="dangky">
+        <h2>Đăng ký tham gia</h2>
+        <form id="register">
+            <input type="text" id="name" placeholder="Họ tên" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="note" placeholder="Ghi chú thêm"></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+        <p id="msg"></p>
+    </section>
+    <footer style="text-align:center; padding:10px; background:#1a1a1d;">
+        © 2025 Lễ Hội Halloween — FIT.HCMUE.
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.vendors li').click(function(){
+                const detail = $(this).data('detail');
+                $('#vendor-detail').text(detail);
+            });
+            $('#register').submit(function(e){
+                e.preventDefault();
+                $('#msg').text('Cảm ơn bạn đã đăng ký!');
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>
